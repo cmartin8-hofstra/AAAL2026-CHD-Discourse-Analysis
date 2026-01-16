@@ -2,17 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: 'Epistemic Stancetaking and Fear Appeals by State Chapters of Children''s Health Defense on Twitter (X)'
 authors:
-  # TODO: Confirm final authorship order with advisor before publication
-  - family-names: Martin
-    given-names: Carolyn
-    # orcid: 'https://orcid.org/0000-0000-0000-0000'  # TODO: Add after ORCID registration
-    affiliation: 'Hofstra University'
-    alias: Davis  # Links to previous publications under maiden name
-  - family-names: '[PROFESSOR_LAST_NAME]'
-    given-names: '[PROFESSOR_FIRST_NAME]'
-    # orcid: 'https://orcid.org/0000-0000-0000-0000'  # TODO: Request from advisor
-    affiliation: 'Hofstra University'
-    role: advisor
+  # Authors: [To be added after publication]
+  - name: '[To be added after publication]'
 type: software
 repository-code: 'https://github.com/[username]/AAAL2026-CHD-Discourse-Analysis'
 abstract: 'Computational forensic linguistics analysis of vaccine hesitancy discourse by Children''s Health Defense state chapters on Twitter/X. Applies PMI lexical association analysis (Church & Hanks, 1990), epistemic stance classification (Heritage, 2012), and multimodal fear appeals framework (Gill & Lennon, 2022) to examine how anti-vaccine organizations construct persuasive health misinformation through coordinated linguistic and visual strategies.'

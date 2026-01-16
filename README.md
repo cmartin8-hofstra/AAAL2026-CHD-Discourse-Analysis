@@ -25,17 +25,7 @@ This repository contains the complete computational analysis pipeline for a fore
 
 ## Authors
 
-**Carolyn Martin** (nee Davis)
-MA Candidate, Forensic Linguistics
-Hofstra University
-<!-- Email will be added after publication -->
-
-**Dr. [PROFESSOR_NAME]** (Advisor)
-<!-- Title/Department to be added -->
-Hofstra University
-<!-- Email will be added after publication -->
-
-> **Note**: ORCID identifiers will be added when repository becomes public.
+Authors: [To be added after publication]
 
 ---
 
@@ -251,10 +241,9 @@ After manuscript acceptance, the following will be publicly available:
 Use this format until manuscript is published:
 
 ```
-Martin, C., & [Professor Last Name], [Initial]. (2026). Epistemic Stancetaking
-  and Fear Appeals by State Chapters of Children's Health Defense on Twitter (X).
-  Paper presented at the American Association for Applied Linguistics (AAAL)
-  2026 Conference, [City], [State].
+[Authors]. (2026). Epistemic Stancetaking and Fear Appeals by State Chapters
+  of Children's Health Defense on Twitter (X). Paper presented at the American
+  Association for Applied Linguistics (AAAL) 2026 Conference.
 ```
 
 ### Post-Publication Citation
@@ -266,8 +255,8 @@ After manuscript acceptance, see `CITATION.cff` for updated citation format incl
 To cite the computational pipeline:
 
 ```
-Martin, C., & [Professor Last Name], [Initial]. (2026). AAAL2026-CHD-Discourse-Analysis
-  [Computer software]. GitHub. https://github.com/[username]/AAAL2026-CHD-Discourse-Analysis
+[Authors]. (2026). AAAL2026-CHD-Discourse-Analysis [Computer software]. GitHub.
+  https://github.com/[username]/AAAL2026-CHD-Discourse-Analysis
 ```
 
 ---
@@ -365,17 +354,7 @@ This project builds on excellent open-source tools:
 
 ## Contact
 
-For questions about this research:
-
-**Carolyn Martin** (nee Davis)
-MA Candidate, Forensic Linguistics
-Hofstra University
-<!-- Email will be added after publication -->
-
-**Dr. [PROFESSOR_NAME]**
-<!-- Title/Department to be added -->
-Hofstra University
-<!-- Email will be added after publication -->
+Authors: [To be added after publication]
 
 ---
 
