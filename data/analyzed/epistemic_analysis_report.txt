@@ -1,0 +1,89 @@
+AAAL 2026 EPISTEMIC STANCE ANALYSIS REPORT
+Generated: 20260114_145432
+============================================================
+
+THEORETICAL FRAMEWORK:
+  Heritage, J. (2012). Epistemic engine: Sequence organization
+  and territories of knowledge. Research on Language and Social
+  Interaction, 45(1), 30-52.
+
+  Hyland, K. (1998). Hedging in scientific research articles.
+  John Benjamins Publishing.
+
+  Hinkel, E. (2005). Hedging, inflating, and persuading in L2
+  academic writing. Applied Language Learning, 15(1&2), 29-53.
+
+PARAMETERS:
+  Hedge markers: 25 terms
+  Booster markers: 26 terms
+  Min threshold for stance: 2
+
+CORPUS SUMMARY:
+  Total rows analyzed: 1239
+  Tweets with hedges: 218 (17.6%)
+  Tweets with boosters: 572 (46.2%)
+  Tweets with any markers: 679 (54.8%)
+  Mean epistemic density: 1.732 per 100 words
+
+STANCE DISTRIBUTION:
+  K+ (high certainty): 248 (20.0%)
+  K- (low certainty): 53 (4.3%)
+  Mixed: 51 (4.1%)
+  Neutral: 887 (71.6%)
+
+CHAPTER BREAKDOWN:
+  Chapter          Rows     K+     K-    Density
+  ------------ -------- ------ ------ ----------
+  AZ                 72     13      3      2.296
+  FL                 87     18      0      1.345
+  HI                 30      5      1      1.622
+  IN                 75     18      2      3.209
+  KS                101     10      2      1.090
+  MAIN               98     23      6      1.932
+  MD                 84     20      3      1.995
+  MI                 97     20      9      1.886
+  MN                 91     17      5      1.335
+  NJ                 77     18      2      1.370
+  NY                 90     15      6      1.416
+  PA                 80     16      5      1.837
+  TN                 93     21      4      2.026
+  VA                102     23      5      1.543
+  WA                 62     11      0      1.247
+
+TOP HEDGE MARKERS (Corpus-Wide):
+  would: 67
+  may: 53
+  could: 42
+  think: 34
+  likely: 30
+  believe: 20
+  might: 12
+  suggests: 8
+  maybe: 8
+  probably: 8
+  perhaps: 6
+  seems: 4
+  allegedly: 3
+  possibly: 2
+  appears: 2
+
+TOP BOOSTER MARKERS (Corpus-Wide):
+  show: 291
+  will: 168
+  know: 130
+  truth: 97
+  never: 57
+  must: 35
+  evidence: 32
+  fact: 27
+  shows: 27
+  true: 26
+  confirmed: 17
+  known: 13
+  facts: 12
+  always: 12
+  clearly: 8
+
+OUTPUT FILES:
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/data/analyzed/epistemic_analyzed.xlsx
+    -> 1239 rows, 15 sheets

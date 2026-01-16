@@ -1,0 +1,67 @@
+AAAL 2026 CORPUS PREPARATION REPORT
+Generated: 20260114_143317
+============================================================
+
+CORPUS SUMMARY (Post-Duplicate Removal):
+  Total rows after cleaning: 1433
+  Final multimodal rows: 1239 across 15 sheets
+  Text-only extracted: 194 (13.5%)
+  1:1 Alignment: VERIFIED (tweet_df == image_df == 1239)
+
+DUPLICATE HANDLING (Biber et al., 1999):
+  Within-chapter duplicates detected: 39
+  Duplicates removed from main datasets: 39
+  Duplicates preserved for traceability: 39
+
+PNG COPY STATS (multimodal_data_snaps):
+  PNGs copied: 1239
+  PNGs missing: 0
+  Copy errors: 0
+  Destination: /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/outputs/multimodal_data_snaps
+
+FILLED STATS:
+  Word count recomputed: 1545
+  Hashtags extracted: 2
+  OCR image_tweet_text filled: 272
+  OCR image_description filled: 0
+
+VERIFICATION:
+  Word count mismatches: 999
+  Empty tweet_text: 97
+  Inconsistent OCR: 7
+  Missing PNGs (source): 0
+
+OUTPUT FILES (Multi-Sheet by Chapter - SYMMETRIC):
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/outputs/tweet_reorganized_standardized.xlsx
+    -> 1239 rows, 15 sheets
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/outputs/image_reorganized_standardized.xlsx
+    -> 1239 rows, 15 sheets
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/outputs/text_only_tweets.xlsx
+    -> 194 rows, 1 sheet
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/outputs/within_chapter_duplicates.xlsx
+    -> 39 rows, preserved for traceability
+
+SYMMETRIC VALIDATION:
+  Status: PASSED
+  Total tweets: 1239
+  Total images: 1239
+  Match: True
+
+CHAPTER BREAKDOWN (1:1 multimodal alignment):
+  Chapter        Tweets   Images    Match
+  ------------ -------- -------- --------
+  CHD_AZ             72       72        ✓
+  CHD_FL             87       87        ✓
+  CHD_HI             30       30        ✓
+  CHD_IN             75       75        ✓
+  CHD_KS            101      101        ✓
+  CHD_MAIN           98       98        ✓
+  CHD_MD             84       84        ✓
+  CHD_MI             97       97        ✓
+  CHD_MN             91       91        ✓
+  CHD_NJ             77       77        ✓
+  CHD_NY             90       90        ✓
+  CHD_PA             80       80        ✓
+  CHD_TN             93       93        ✓
+  CHD_VA_           102      102        ✓
+  CHD_WA             62       62        ✓

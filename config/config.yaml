@@ -1,0 +1,297 @@
+# AAAL 2026 Pipeline Configuration
+# CHD Twitter/X Vaccine Hesitancy Discourse Analysis
+# Forensic Linguistics Pipeline for Multimodal Fear Appeal Analysis
+# =============================================================================
+# Theoretical Frameworks:
+#   - PMI: Church & Hanks (1990) - Lexical association measures
+#   - Epistemic Stancetaking: Heritage (2012), Hyland (1998), Hinkel (2005)
+#   - Sentiment: Hutto & Gilbert (2014) - VADER for social media
+#   - Multimodal: Androutsopoulos (2014) - Digital discourse analysis
+#   - Fear Appeals: Gill & Lennon (2022) - Meta-functional framework
+#   - Corpus Standards: Biber et al. (1999); Egbert & Biber (2019)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# PATHS
+# -----------------------------------------------------------------------------
+paths:
+  input_dir: "data/input"
+  prepared_dir: "data/prepared"
+  analyzed_dir: "data/analyzed"
+  output_dir: "outputs"
+  log_dir: "logs"
+
+  # Input files
+  unified_csv: "tweet_analysis_complete.csv"
+  tweet_file: "tweet_reorganized_standardized.xlsx"
+  image_file: "image_reorganized_standardized.xlsx"
+
+  # PNG source for exemplar copying
+  png_source_dir: "/Users/carolyndavis/Desktop/Hofstra25-26/AAAL_Pipeline_Final/data/raw/data_snaps"
+
+# -----------------------------------------------------------------------------
+# MERGE KEYS (for 1:1 multimodal verification)
+# -----------------------------------------------------------------------------
+merge:
+  keys:
+    - "data_snap_source"
+    - "user_name"
+
+# -----------------------------------------------------------------------------
+# CHAPTER CODES (15 CHD state chapters)
+# Per Biber et al. (1999): Stratified sampling ensures representativeness
+# -----------------------------------------------------------------------------
+chapters:
+  - "CHD_MAIN"
+  - "CHD_AZ"
+  - "CHD_FL"
+  - "CHD_HI"
+  - "CHD_IN"
+  - "CHD_KS"
+  - "CHD_MD"
+  - "CHD_MI"
+  - "CHD_MN"
+  - "CHD_NJ"
+  - "CHD_NY"
+  - "CHD_PA"
+  - "CHD_TN"
+  - "CHD_VA_"
+  - "CHD_WA"
+
+# Chapter code extraction from data_snap_source
+chapter_prefix_map:
+  "AZ": "CHD_AZ"
+  "FL": "CHD_FL"
+  "HI": "CHD_HI"
+  "IN": "CHD_IN"
+  "KS": "CHD_KS"
+  "CH": "CHD_MAIN"
+  "MAIN": "CHD_MAIN"
+  "MD": "CHD_MD"
+  "MI": "CHD_MI"
+  "MN": "CHD_MN"
+  "NJ": "CHD_NJ"
+  "NY": "CHD_NY"
+  "PA": "CHD_PA"
+  "TN": "CHD_TN"
+  "VA": "CHD_VA_"
+  "WA": "CHD_WA"
+
+# -----------------------------------------------------------------------------
+# PMI ANALYSIS (Church & Hanks, 1990)
+# -----------------------------------------------------------------------------
+# Pointwise Mutual Information identifies statistically significant
+# lexical associations beyond chance co-occurrence. Essential for
+# forensic detection of vaccine misinformation collocational patterns.
+pmi:
+  # Vaccine-related anchor terms (27-term harmonized list)
+  anchor_terms:
+    # Core vaccine terms
+    - "vaccine"
+    - "vaccines"
+    - "vaccination"
+    - "vaccinated"
+    - "vax"
+    - "vaxx"
+    - "vaxxed"
+    - "unvaxxed"
+    - "vaxxine"
+    - "vx"
+    # Colloquial terms
+    - "jab"
+    - "jabs"
+    - "shot"
+    - "shots"
+    - "injection"
+    - "injections"
+    # Booster terms
+    - "booster"
+    - "boosters"
+    - "immunization"
+    # Brand/technology terms
+    - "mrna"
+    - "pfizer"
+    - "moderna"
+    # COVID-specific compounds (post-normalization)
+    - "covidvaccine"
+    - "covidjab"
+    - "covidshot"
+    - "covid19vaccine"
+
+  # Co-occurrence window (words before/after anchor)
+  window_size: 3
+
+  # Minimum frequency for PMI calculation
+  min_frequency: 2
+
+# -----------------------------------------------------------------------------
+# MULTIWORD NORMALIZATION (applied before tokenization)
+# -----------------------------------------------------------------------------
+# Per Biber et al. (1999): Multiword expressions should be treated as
+# single lexical units for accurate frequency and association measures.
+multiword_normalization:
+  - ["covid vaccine", "covidvaccine"]
+  - ["covid jab", "covidjab"]
+  - ["covid shot", "covidshot"]
+  - ["covid-19 vaccine", "covid19vaccine"]
+  - ["covid19 vaccine", "covid19vaccine"]
+  - ["mrna vaccine", "mrnavaccine"]
+  - ["mrna jab", "mrnajab"]
+  - ["pfizer vaccine", "pfizervaccine"]
+  - ["moderna vaccine", "modernavaccine"]
+
+# -----------------------------------------------------------------------------
+# EPISTEMIC ANALYSIS (Heritage 2012, Hyland 1998, Hinkel 2005)
+# -----------------------------------------------------------------------------
+# Epistemic stance markers indicate speaker certainty/uncertainty.
+# K+ (booster-dominant) suggests high epistemic authority claims.
+# K- (hedge-dominant) suggests epistemic mitigation.
+epistemic:
+  # Hedges (K- markers) - Hyland (1998), Hinkel (2005)
+  hedges:
+    - "may"
+    - "might"
+    - "could"
+    - "would"
+    - "perhaps"
+    - "possibly"
+    - "probably"
+    - "likely"
+    - "suggests"
+    - "appears"
+    - "seems"
+    - "assume"
+    - "believe"
+    - "think"
+    - "indicate"
+    - "arguably"
+    - "reportedly"
+    - "allegedly"
+    - "approximately"
+    - "roughly"
+    - "maybe"
+    - "tend"
+    - "tends"
+    - "uncertain"
+    - "unclear"
+
+  # Boosters (K+ markers) - Hyland (1998), Hinkel (2005)
+  boosters:
+    - "clearly"
+    - "obviously"
+    - "certainly"
+    - "definitely"
+    - "undoubtedly"
+    - "absolutely"
+    - "always"
+    - "never"
+    - "proven"
+    - "proof"
+    - "evidence"
+    - "fact"
+    - "facts"
+    - "demonstrate"
+    - "demonstrates"
+    - "show"
+    - "shows"
+    - "establish"
+    - "confirm"
+    - "confirmed"
+    - "must"
+    - "will"
+    - "know"
+    - "known"
+    - "truth"
+    - "true"
+
+  # Classification thresholds (Heritage 2012)
+  classification:
+    # K+ = booster_count > hedge_count AND booster_count >= min_for_stance
+    # K- = hedge_count > booster_count AND hedge_count >= min_for_stance
+    # Mixed = both >= 1
+    # Neutral = both = 0
+    min_for_stance: 2
+
+# -----------------------------------------------------------------------------
+# SELECTION SCORING (Composite 0-8 scale)
+# -----------------------------------------------------------------------------
+# Per Biber (1988) and Egbert & Biber (2019): Composite scoring enables
+# principled exemplar selection by weighting theoretically-motivated features.
+selection:
+  # Target exemplars per chapter
+  target_per_chapter: 10
+
+  # Composite score weights (0-8 scale total)
+  weights:
+    pmi_sum: 3.0           # PMI lexical association (0-3 points)
+    epistemic_density: 3.0  # Epistemic marker density (0-3 points)
+    sentiment_intensity: 2.0 # Absolute sentiment (0-2 points)
+
+  # Normalization caps for score calculation
+  pmi_cap: 15.0           # Cap PMI sum at 15.0 for normalization
+  epistemic_cap: 20.0     # Cap epistemic density at 20.0 per 100 words
+
+# -----------------------------------------------------------------------------
+# TEXT PRESERVATION RULES (Script 01)
+# -----------------------------------------------------------------------------
+# Per Androutsopoulos (2014): Digital discourse elements carry meaning
+# and should be preserved for multimodal analysis.
+text_preservation:
+  # Hashtags: Strip # but keep text
+  hashtags: "strip_symbol_keep_text"
+
+  # Mentions: Strip @ but keep text
+  mentions: "strip_symbol_keep_text"
+
+  # Emojis: Preserve in both tweet_text and cleaned_text
+  emojis: "preserve"
+
+  # URLs: Preserve in both columns
+  urls: "preserve"
+
+  # Numbers: Preserve in both columns
+  numbers: "preserve"
+
+  # Whitespace: Normalize only (collapse multiple spaces)
+  whitespace: "normalize_only"
+
+# -----------------------------------------------------------------------------
+# OUTPUT COLUMN SPECIFICATIONS
+# -----------------------------------------------------------------------------
+output_columns:
+  # Merged corpus columns
+  merged_corpus:
+    - "data_snap_source"
+    - "user_name"
+    - "tweet_date"
+    - "tweet_text"
+    - "cleaned_text"
+    - "word_count"
+    - "sentiment_compound"
+    - "image_description"
+    - "image_subjects"
+    - "image_contains_face"
+    - "is_multimodal"
+    - "pmi_sum"
+    - "hedge_count"
+    - "booster_count"
+    - "epistemic_stance"
+    - "epistemic_density"
+    - "selection_score"
+    - "chapter_code"
+
+  # Exemplars output columns
+  exemplars:
+    - "data_snap_source"
+    - "user_name"
+    - "tweet_text"
+    - "cleaned_text"
+    - "image_description"
+    - "selection_score"
+    - "pmi_sum"
+    - "epistemic_stance"
+    - "hedge_count"
+    - "booster_count"
+    - "epistemic_density"
+    - "sentiment_compound"
+    - "chapter_code"

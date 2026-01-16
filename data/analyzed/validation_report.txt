@@ -1,0 +1,71 @@
+AAAL 2026 CORPUS VALIDATION REPORT
+Generated: 20260114_145846
+============================================================
+
+THEORETICAL FRAMEWORK:
+  Hutto, C., & Gilbert, E. (2014). VADER: A parsimonious rule-based model
+  for sentiment analysis of social media text. ICWSM.
+
+  Biber, D., et al. (1999). Corpus linguistics: Investigating language
+  structure and use. Cambridge University Press.
+
+SENTIMENT SUMMARY:
+  Mean compound: 0.076 (SD = 0.625)
+  Positive (>0.05): 640 (51.7%)
+  Negative (<-0.05): 502 (40.5%)
+  Neutral: 97 (7.8%)
+
+STATISTICAL VALIDATION (APA 7th Format):
+  Pearson Correlations:
+    PMI sum and epistemic density were not significantly correlated,
+      r = 0.01, p = 0.684.
+    PMI sum and sentiment compound were not significantly correlated,
+      r = 0.01, p = 0.684.
+    Epistemic density and sentiment compound were not significantly correlated,
+      r = 0.01, p = 0.684.
+
+    PMI sum and epistemic density were significantly correlated,
+      r = -0.07, p = 0.016.
+    PMI sum and sentiment compound were significantly correlated,
+      r = -0.07, p = 0.016.
+    Epistemic density and sentiment compound were significantly correlated,
+      r = -0.07, p = 0.016.
+
+    PMI sum and epistemic density were not significantly correlated,
+      r = -0.03, p = 0.259.
+    PMI sum and sentiment compound were not significantly correlated,
+      r = -0.03, p = 0.259.
+    Epistemic density and sentiment compound were not significantly correlated,
+      r = -0.03, p = 0.259.
+
+  One-Way ANOVA (Chapter Variation):
+    A one-way ANOVA revealed significant differences in PMI sum
+    across chapters, F(14, 1224) = 2.46, p = 0.002, η² = 0.03.
+
+    A one-way ANOVA revealed significant differences in sentiment
+    across chapters, F(14, 1224) = 3.89, p < .001, η² = 0.04.
+
+CHAPTER BREAKDOWN:
+  Chapter           N      PMI    Epist     Sent   Pos%   Neg%
+  ------------ ------ -------- -------- -------- ------ ------
+  AZ               72     1.94     2.30     0.06   55.6   37.5
+  FL               87     1.66     1.34     0.24   65.5   29.9
+  HI               30     7.28     1.62     0.23   66.7   26.7
+  IN               75     1.15     3.21     0.10   52.0   34.7
+  KS              101     1.25     1.09     0.31   66.3   28.7
+  MAIN             98     4.47     1.93    -0.03   39.8   48.0
+  MD               84     3.00     1.99     0.02   47.6   41.7
+  MI               97     5.19     1.89    -0.13   35.1   58.8
+  MN               91     3.99     1.34     0.05   52.7   40.7
+  NJ               77     2.67     1.37     0.02   49.4   44.2
+  NY               90     4.00     1.42     0.26   65.6   30.0
+  PA               80     3.99     1.84    -0.07   40.0   53.8
+  TN               93     2.39     2.03     0.11   60.2   35.5
+  VA              102     5.70     1.54    -0.04   44.1   50.0
+  WA               62     5.10     1.25     0.08   41.9   35.5
+
+OUTPUT FILES:
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/data/analyzed/validated_corpus.xlsx
+    -> 1239 rows, 15 sheets
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/data/analyzed/validated_corpus.csv
+    -> Flat file for external analysis

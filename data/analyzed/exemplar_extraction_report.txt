@@ -1,0 +1,67 @@
+AAAL 2026 EXEMPLAR EXTRACTION REPORT
+Generated: 20260114_150250
+============================================================
+
+THEORETICAL FRAMEWORK:
+  Biber, D. (1988). Variation across speech and writing.
+  Cambridge University Press.
+
+  Egbert, J., & Biber, D. (2019). Register variation online.
+  Cambridge University Press.
+
+SELECTION PARAMETERS:
+  Target per chapter: 10
+  Weights: PMI=3.0, Epistemic=3.0, Sentiment=2.0
+  Caps: PMI=15.0, Epistemic=20.0
+
+CORPUS SUMMARY:
+  Total exemplars selected: 150 (150 target)
+  Mean score: 4.150
+  Score range: 2.393 - 5.537
+
+CHAPTER BREAKDOWN:
+  Chapter         N     Mean      Min      Max
+  ------------ ---- -------- -------- --------
+  AZ             10    3.406    2.551    4.610
+  FL             10    3.696    2.444    5.318
+  HI             10    3.464    2.393    4.699
+  IN             10    3.285    2.612    5.175
+  KS             10    3.586    2.522    4.937
+  MAIN           10    4.862    4.267    5.531
+  MD             10    3.928    2.500    5.537
+  MI             10    4.830    4.345    5.444
+  MN             10    4.574    3.757    5.319
+  NJ             10    4.232    2.824    5.150
+  NY             10    4.407    3.764    5.488
+  PA             10    4.408    3.590    5.273
+  TN             10    4.013    2.764    5.118
+  VA             10    5.036    4.684    5.272
+  WA             10    4.530    3.299    5.202
+
+TOP 10 EXEMPLARS (Corpus-Wide):
+  ID           Chapter   Score    PMI  Epist   Sent
+  ------------ -------- ------ ------ ------ ------
+  MD_71        MD         5.54  35.68   3.95   0.97
+  MAIN_104     MAIN       5.53  19.50   4.38   0.94
+  NY_65        NY         5.49  21.15   4.76   0.89
+  MI_60        MI         5.44  52.02   3.45   0.96
+  MN_33        MN         5.32  15.06   5.00   0.78
+  FL_80        FL         5.32  39.47   3.29   0.91
+  PA_34        PA         5.27  31.51   9.92   0.39
+  VA_31        VA         5.27  29.69   3.09   0.90
+  FL_22        FL         5.26  26.09   3.77   0.85
+  MN_81        MN         5.26  19.71   2.63   0.93
+
+PNG COPY STATS:
+  Copied: 150
+  Missing: 0
+  Errors: 0
+  Destination: /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/outputs/exemplars
+
+OUTPUT FILES:
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/data/analyzed/selected_exemplars.xlsx
+    -> 150 exemplars, 15 sheets
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/data/analyzed/selected_exemplars.csv
+    -> Flat file for external analysis
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/outputs/exemplars/
+    -> 150 exemplar PNGs

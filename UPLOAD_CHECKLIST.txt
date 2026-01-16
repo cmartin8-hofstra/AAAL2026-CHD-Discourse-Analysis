@@ -1,0 +1,171 @@
+================================================================================
+GITHUB UPLOAD CHECKLIST - AAAL 2026 Repository
+================================================================================
+Generated: January 16, 2026 at 10:05 AM EST
+Destination: Private GitHub Repository
+
+This folder contains EXACTLY 26 files ready for GitHub upload.
+
+---
+ROOT LEVEL FILES (9 files - ALL PRESENT)
+---
+[PRESENT] README.md                    [NEW - Pre-publication version]
+[PRESENT] METHODOLOGY.md               [Copied from source]
+[PRESENT] CODEBOOK.md                  [Copied from source]
+[PRESENT] CITATION.cff                 [NEW - Blank ORCIDs, professor placeholder]
+[PRESENT] LICENSE                      [NEW - Carolyn Martin copyright]
+[PRESENT] requirements.txt             [Copied from AAAL_Pipeline_Final]
+[PRESENT] DEPLOYMENT.md                [Copied from source]
+[PRESENT] .gitignore                   [NEW - Excludes logs, caches, large files]
+[PRESENT] UPLOAD_CHECKLIST.txt         [This file]
+
+---
+SCRIPTS FOLDER (7 files - ALL PRESENT)
+---
+[PRESENT] scripts/01_data_standardization.py
+[PRESENT] scripts/02_pmi_analysis.py
+[PRESENT] scripts/03_epistemic_analysis.py
+[PRESENT] scripts/04_sentiment_validation.py
+[PRESENT] scripts/05_exemplar_extraction.py
+[PRESENT] scripts/06_multimodal_coding_template.py
+[PRESENT] scripts/07_generate_visualizations.py
+
+---
+CONFIG FOLDER (1 file - PRESENT)
+---
+[PRESENT] config/config.yaml
+
+---
+DATA FOLDER (9 files - ALL PRESENT)
+---
+[PRESENT] data/analyzed/validated_corpus.csv
+[PRESENT] data/analyzed/selected_exemplars.csv
+[PRESENT] data/analyzed/pmi_corpus_statistics.csv
+[PRESENT] data/analyzed/preparation_report.txt
+[PRESENT] data/analyzed/pmi_analysis_report.txt
+[PRESENT] data/analyzed/epistemic_analysis_report.txt
+[PRESENT] data/analyzed/validation_report.txt
+[PRESENT] data/analyzed/exemplar_extraction_report.txt
+[PRESENT] data/analyzed/coding_template_report.txt
+
+================================================================================
+TOTAL: 26 FILES READY FOR UPLOAD
+================================================================================
+
+---
+EXCLUDED FROM REPOSITORY (per .gitignore)
+---
+- Raw data files (data/input/, data/raw/)
+- Excel workbooks (*.xlsx)
+- PNG screenshots (outputs/multimodal_data_snaps/, outputs/exemplars/)
+- Log files (logs/, *.log)
+- Python cache (__pycache__/)
+
+These files are INTENTIONALLY excluded to:
+1. Keep repository size manageable (<2MB)
+2. Protect privacy (PNG screenshots show full Twitter profiles)
+3. Comply with professor's request to keep raw data private until publication
+
+---
+NEXT STEPS BEFORE UPLOAD
+---
+1. MANUALLY UPDATE these placeholders in CITATION.cff:
+   - Line 13: Replace [PROFESSOR_LAST_NAME] with actual name
+   - Line 14: Replace [PROFESSOR_FIRST_NAME] with actual name
+   - Line 29-32: Update conference dates and location when known
+
+2. MANUALLY UPDATE these placeholders in README.md:
+   - Search for [PROFESSOR_NAME] and replace with actual name
+   - Add professor's title/department where indicated
+
+3. EMAIL PROFESSOR:
+   - Request their GitHub username to add as collaborator
+   - Confirm authorship order is correct
+   - Request their ORCID (optional for now)
+
+---
+UPLOAD TO GITHUB
+---
+1. Go to https://github.com/new
+2. Repository name: AAAL2026-CHD-Discourse-Analysis
+3. Description: "Forensic linguistics analysis - PRIVATE until publication"
+4. SELECT: Private (NOT Public)
+5. Do NOT initialize with README
+6. Click "Create repository"
+
+UPLOAD OPTION A - Git Command Line:
+   cd ~/Desktop/github_launch
+   git init
+   git add .
+   git commit -m "Initial commit: AAAL 2026 analysis pipeline (private preprint)"
+   git remote add origin https://github.com/[username]/AAAL2026-CHD-Discourse-Analysis.git
+   git branch -M main
+   git push -u origin main
+
+UPLOAD OPTION B - GitHub Web Interface:
+   - Drag and drop ALL contents of github_launch folder
+   - Commit message: "Initial commit: AAAL 2026 analysis pipeline (private preprint)"
+
+---
+POST-UPLOAD STEPS
+---
+1. ADD PROFESSOR AS COLLABORATOR:
+   - Repo Settings -> Collaborators -> Add people
+   - Enter professor's GitHub username or email
+   - Grant "Maintain" or "Admin" access
+
+2. VERIFY UPLOAD:
+   - Check all 26 files appear on GitHub
+   - Verify repository shows "Private" badge
+   - Test clone: git clone [repo_url] to confirm structure
+
+================================================================================
+IMPORTANT REMINDERS
+================================================================================
+
+- This is a PRIVATE repository - only you and collaborators can see it
+- Do NOT make public until after AAAL presentation (March 2026) AND paper publication
+- Professor must approve before making public
+- ORCIDs can be added later when repository goes public
+- Zenodo DOI will be created only when repository becomes public
+
+================================================================================
+VERIFICATION COMMANDS (Run after upload)
+================================================================================
+
+# Count files in repository
+find ~/Desktop/github_launch -type f | wc -l
+# Expected: 26
+
+# Verify CSV row counts
+cd ~/Desktop/github_launch
+python3 -c "import pandas as pd; print('Validated:', len(pd.read_csv('data/analyzed/validated_corpus.csv')))"
+# Expected: 1239
+
+python3 -c "import pandas as pd; print('Exemplars:', len(pd.read_csv('data/analyzed/selected_exemplars.csv')))"
+# Expected: 150
+
+# Check file sizes
+du -sh ~/Desktop/github_launch
+# Expected: ~1.5MB
+
+================================================================================
+QUESTIONS? ISSUES?
+================================================================================
+
+If anything is missing or incorrect:
+1. Check this checklist against actual folder contents
+2. Verify source directory: /Users/carolyndavis/Desktop/AAAL_FINAL_OUTPUT
+3. Re-run folder creation process if needed
+
+For GitHub upload issues:
+- See DEPLOYMENT.md for detailed troubleshooting
+- Ensure git is installed: git --version
+- Ensure you're logged into GitHub: gh auth status
+
+================================================================================
+Created: January 16, 2026
+Source: /Users/carolyndavis/Desktop/AAAL_FINAL_OUTPUT
+Destination: /Users/carolyndavis/Desktop/github_launch
+Purpose: Private GitHub repository for AAAL 2026 conference submission
+================================================================================

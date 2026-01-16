@@ -1,0 +1,61 @@
+AAAL 2026 MULTIMODAL CODING TEMPLATE REPORT
+Generated: 20260114_150618
+============================================================
+
+THEORETICAL FRAMEWORK:
+  Gill, P., & Lennon, R. (2022). A multimodal fear appeals analysis
+  framework for vaccine misinformation. JMIR, 24(6), e36255.
+
+  Androutsopoulos, J. (2014). Mediatization and sociolinguistic change.
+  De Gruyter.
+
+CODING INSTRUCTIONS (Gill & Lennon, 2022):
+  1. Composition: Describe visual arrangement, salience, framing.
+  2. Color: Note palette choices and emotional/affective impact.
+  3. Represented Participants: Identify depicted actors/objects and roles.
+  4. Perspective/Angles: Analyze viewer positioning (e.g., power relations).
+  5. Textual Components: Examine embedded text, typography, integration.
+  6. Fear Appeal: Synthesize how elements construct threat/vulnerability.
+
+TEMPLATE SUMMARY:
+  Sheets created: 15
+  Total coding rows: 150 (target: 150)
+
+CHAPTER BREAKDOWN:
+  Chapter          Exemplars
+  --------------- ----------
+  AZ                      10
+  FL                      10
+  HI                      10
+  IN                      10
+  KS                      10
+  MAIN                    10
+  MD                      10
+  MI                      10
+  MN                      10
+  NJ                      10
+  NY                      10
+  PA                      10
+  TN                      10
+  VA                      10
+  WA                      10
+
+PIPELINE TRACEABILITY:
+  Script 01 → Data standardization (1:1 multimodal alignment)
+  Script 02 → PMI lexical association analysis
+  Script 03 → Epistemic stance classification (Heritage, 2012)
+  Script 04 → Sentiment analysis & corpus validation
+  Script 05 → Exemplar extraction (composite scoring)
+  Script 06 → THIS TEMPLATE (manual qualitative coding)
+
+METHODOLOGICAL INTEGRATION:
+  Computational analysis (Scripts 01-05) identifies prototypical
+  instances using PMI, epistemic density, and sentiment intensity.
+  Manual qualitative coding (Script 06) examines visual fear appeal
+  strategies following Gill & Lennon (2022) framework.
+
+OUTPUT FILES:
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/data/analyzed/multimodal_coding_template.xlsx
+    -> Blank coding template, 150 rows
+  outputs/exemplars/{chapter}/
+    -> PNG files for visual reference during coding

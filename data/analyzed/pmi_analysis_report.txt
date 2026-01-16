@@ -1,0 +1,68 @@
+AAAL 2026 PMI ANALYSIS REPORT
+Generated: 20260114_144651
+============================================================
+
+THEORETICAL FRAMEWORK:
+  Church, K. W., & Hanks, P. (1990). Word association norms,
+  mutual information, and lexicography. Computational Linguistics.
+
+PARAMETERS:
+  Anchor terms: 26
+  Window size: +/-3 words
+  Min frequency: 2
+  Stopwords excluded: 179
+
+CORPUS SUMMARY:
+  Total rows analyzed: 1239
+  Tweets with PMI content: 233 (18.8%)
+  Mean PMI sum: 18.360
+  Max PMI sum: 83.882
+
+CHAPTER BREAKDOWN:
+  Chapter          Rows   Mean PMI    PMI>0
+  ------------ -------- ---------- --------
+  CHD_AZ             72      1.938       12
+  CHD_FL             87      1.661       12
+  CHD_HI             30      7.283       11
+  CHD_IN             75      1.149        9
+  CHD_KS            101      1.255        8
+  CHD_MAIN           98      4.471       29
+  CHD_MD             84      3.002        9
+  CHD_MI             97      5.194       26
+  CHD_MN             91      3.989       20
+  CHD_NJ             77      2.674       14
+  CHD_NY             90      4.000       15
+  CHD_PA             80      3.990       14
+  CHD_TN             93      2.389       10
+  CHD_VA_           102      5.701       32
+  CHD_WA             62      5.102       12
+
+TOP PMI COLLOCATIONS (Corpus-Wide):
+  Anchor          Collocate       Chapter         PMI
+  --------------- --------------- ---------- --------
+  vaccine         /               NJ            6.820
+  vaccine         graph           NJ            6.820
+  vaccine         going           NJ            6.820
+  vaccine         back            NJ            6.820
+  vaccine         could           VA            6.762
+  vaccine         get             VA            6.762
+  vaccine         eu              VA            6.762
+  vaccine         injuries        VA            6.700
+  vaccine         +               VA            6.700
+  vaccine         death           VA            6.700
+  vaccine         truly           MD            6.679
+  vaccine         must            MD            6.679
+  vaccine         afford          MD            6.679
+  vax             town            WA            6.672
+  vax             hall            WA            6.672
+  vax             unvax           WA            6.672
+  vax             bus             WA            6.672
+  vaccine         fixation        AZ            6.629
+  vaccine         status          AZ            6.629
+  vaccine         tell            AZ            6.629
+
+OUTPUT FILES:
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/data/analyzed/pmi_analyzed.xlsx
+    -> 1239 rows, 15 sheets
+  /Users/carolyndavis/Desktop/AAAL_2026_Pipeline/data/analyzed/pmi_corpus_statistics.csv
+    -> Corpus statistics for reproducibility

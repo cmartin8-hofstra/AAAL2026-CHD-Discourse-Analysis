@@ -1,0 +1,27 @@
+# Logs and temporary files
+logs/
+*.log
+
+# Raw data (too large and private)
+data/raw/
+data/input/
+*.xlsx
+*.png
+*.jpg
+*.jpeg
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Output files (generated, not needed in repo)
+outputs/figures/
+outputs/exemplars/
+outputs/multimodal_data_snaps/
