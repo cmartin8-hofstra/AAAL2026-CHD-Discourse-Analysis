@@ -25,3 +25,13 @@ Thumbs.db
 outputs/figures/
 outputs/exemplars/
 outputs/multimodal_data_snaps/
+
+# Companion website — allow docs/ and its images
+!docs/
+!docs/**
+!docs/images/**/*.png
+
+# Site build tooling (source, not needed in repo)
+node_modules/
+public/
+src/
