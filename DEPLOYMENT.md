@@ -198,7 +198,7 @@ If any file exceeds 100MB:
 
 For questions about the repository or data access requests:
 
-**Carolyn Davis**  
+**Carolyn Martin**  
 MA Candidate, Forensic Linguistics  
 Hofstra University  
 [Email address]

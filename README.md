@@ -178,7 +178,7 @@ This project employs a **mixed-methods computational linguistics approach** inte
    - Compound scores: -1 (negative) to +1 (positive)
 
 4. **Multimodal Fear Appeals Framework** (Gill & Lennon, 2022)
-   - 6 coding categories: Composition, Color, Represented Participants, Perspective, Textual Components, Fear Integration
+   - 5 coding categories: Composition, Color, Represented Participants, Perspective, Textual Components
    - Manual qualitative coding of 150 exemplars
 
 5. **Statistical Validation** (Biber et al., 1999)

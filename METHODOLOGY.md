@@ -279,7 +279,7 @@ Where:
 
 - 15 Excel sheets (one per chapter)
 - 10 rows per sheet (selected exemplars)
-- 7 columns (ID + 6 coding categories)
+- 7 columns (ID + 5 coding categories + Fear Appeal Integration)
 - APA 7th compliant formatting
 
 ---
